@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.18.4)
+project(map-maker)
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+add_executable(map-maker main.cpp)
+target_link_libraries(map-maker ${SDL2_LIBRARIES})
